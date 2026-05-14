@@ -46,3 +46,9 @@ There are different types of ListViews :
     * ListView.separated
     * ListView.custom
 
+###### Circle Avater ######
+
+- It is a simply circle which we can add background color, background image or just text
+- It usually represent a user with his image or with his initials 
+- Although we can make a similer widget from the ground up
+- This widgets comes in handy in the fist development of an application.
