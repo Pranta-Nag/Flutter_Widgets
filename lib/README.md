@@ -63,3 +63,9 @@ There are different types of ListViews :
     * child : The child property takes in a widget as the object to show below the Theme widget in the widget tree.
     * data : This property takes in ThemeData class as the object to specify the styling, colors and typography to be used.
 
+
+###### Text Field ######
+
+- A TextField an input element which hold the alphanumeric data, such as name, password, address etc.
+- Enable the user to enter text information using a programmable code.
+
