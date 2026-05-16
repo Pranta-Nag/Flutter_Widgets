@@ -52,3 +52,14 @@ There are different types of ListViews :
 - It usually represent a user with his image or with his initials 
 - Although we can make a similer widget from the ground up
 - This widgets comes in handy in the fist development of an application.
+
+
+##### Style and Theme ######
+
+- Themes are an integral part of UI for any application. Themes are used to design the fonts and colors of an application to make it more presentable. In Flutter, the Theme widget is used to add themes to an application. One can use it either for a particular part of the application like buttons and navigation bar or define it in the root of the application to use it throughout the entire app.
+
+- Properties of Theme Widget
+
+    * child : The child property takes in a widget as the object to show below the Theme widget in the widget tree.
+    * data : This property takes in ThemeData class as the object to specify the styling, colors and typography to be used.
+
