@@ -41,40 +41,42 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blue,
         centerTitle: true,
       ),
-
       body: ListView.builder(
         itemCount: images.length,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.all(8),
-            child: Row(
-              
-              children: [
-                CircleAvatar(
-                  radius: 30,
-                  backgroundImage: NetworkImage(images[index]),
-                ),
-
-                const SizedBox(width: 15),
-
-                Text(
-                  names[index],
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+            child: Card(
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              elevation: 5,
+              shadowColor: Colors.greenAccent,
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundImage: NetworkImage(images[index]),
                   ),
-                ),
-
-                const Spacer(),
-
-                const Text(
-                  "Active",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.green,
+                  const SizedBox(width: 15),
+                  Text(
+                    names[index],
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-              ],
+                  const Spacer(),
+                  const Text(
+                    "Active",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.green,
+                    ),
+                  ),
+                ],
+              ),
             ),
           );
         },
