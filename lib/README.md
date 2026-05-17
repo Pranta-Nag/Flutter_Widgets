@@ -69,3 +69,11 @@ There are different types of ListViews :
 - A TextField an input element which hold the alphanumeric data, such as name, password, address etc.
 - Enable the user to enter text information using a programmable code.
 
+##### Date and Time Picker ######
+
+- In Flutter, the DateTime.now() function is used to get the current date and time from the system. To update the time dynamically, setState() is used inside a StatefulWidget.
+
+- DateTime.now() stores the current date and time.
+A Container displays the time and date.
+When the Refresh button is pressed, setState() updates the UI with the latest current time.
+
