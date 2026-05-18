@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 // passing multiple parameters
 class Screenthree extends StatelessWidget {
@@ -20,14 +21,22 @@ class Screenthree extends StatelessWidget {
         title: const Text('Screen Three'),
         backgroundColor: Colors.red,
       ),
-      body: Center(
-        child: Text(
-          "Name is: $name\nID: $id\nSalary: $salary",
-          style: const TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
+      body: Column(
+        children: [
+          Center(
+            child: Text(
+              "Name is: $name\nID: $id\nSalary: $salary",
+              style: const TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
-        ),
+          ElevatedButton(onPressed: (){
+            context.push("/screenthree/$id/$name/$salary/screenfour");
+          }, child: const Text("Go to Screen Four")),
+        ],
+        
       ),
     );
   }

@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:widgets/goRoute/home_screen.dart';
+import 'package:widgets/goRoute/screenfour.dart';
 import 'package:widgets/goRoute/screenone.dart';
 import 'package:widgets/goRoute/screenthree.dart';
 import 'package:widgets/goRoute/screentwo.dart';
@@ -35,6 +36,22 @@ class AppRouting {
           salary: salary,
         );
       },
+      // nested routes
+      routes: [
+        GoRoute(
+          path: 'screenfour',
+          builder: (context, state) {
+            final id = int.parse(state.pathParameters['id']!);
+            final name = state.pathParameters['name']!;
+            final salary = double.parse(state.pathParameters['salary']!);
+            return Screenfour(
+              id: id,
+              name: name,
+              salary: salary,
+            );
+          },
+        ),
+      ],
     ),
   ]);
 }
