@@ -34,6 +34,7 @@ class Screenthree extends StatelessWidget {
           ),
           ElevatedButton(onPressed: (){
             context.push("/screenthree/$id/$name/$salary/screenfour");
+            // passing multiple parameters to screenfour 
           }, child: const Text("Go to Screen Four")),
         ],
         

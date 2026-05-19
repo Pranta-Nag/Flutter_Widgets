@@ -36,7 +36,7 @@ class AppRouting {
           salary: salary,
         );
       },
-      // nested routes
+      // nested routes 
       routes: [
         GoRoute(
           path: 'screenfour',
