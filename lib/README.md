@@ -83,3 +83,10 @@ When the Refresh button is pressed, setState() updates the UI with the latest cu
 - A widget that expands a child of a Row, Column, or Flex so that the child fills the available space.
 Using an Expanded widget makes a child of a Row, Column, or Flex expand to fill the available space along the main axis (e.g., horizontally for a Row or vertically for a Column). If multiple children are expanded, the available space is divided among them according to the flex factor.
 An Expanded widget must be a descendant of a Row, Column, or Flex, and the path from the Expanded widget to its enclosing Row, Column, or Flex must contain only StatelessWidgets or StatefulWidgets (not other kinds of widgets, like RenderObjectWidgets).
+
+###### Animated Container ######
+
+- Animated version of Container that gradually changes its values over a period of time.
+The AnimatedContainer will automatically animate between the old and new values of properties when they change using the provided curve and duration. Properties that are null are not animated. Its child and descendants are not animated.
+This class is useful for generating simple implicit transitions between different parameters to Container with its internal AnimationController. For more complex animations, you'll likely want to use a subclass of AnimatedWidget such as the DecoratedBoxTransition or use your own AnimationController.
+
